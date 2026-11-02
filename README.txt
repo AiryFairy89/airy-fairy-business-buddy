@@ -1,7 +1,20 @@
-Airy Fairy Business Buddy — public website files
+Airy Fairy Business Buddy — updated app files
 
-Contains no customer backup data. Upload the files in this folder to the root of the public GitHub Pages repository.
+New in this version:
+- Edit existing regular and seasonal orders.
+- Permanently delete cancelled or unwanted orders after confirmation.
+- Records section to import working-hours and expense records from CSV files.
+- Downloadable CSV templates for both imports.
+- Imported records are included in the app's JSON backup.
 
-After deployment, open the site in Safari and add it to the Home Screen. Open Backup in the app and use Import backup to load your private Airy Fairy JSON file from Files. Customer order data stays in local app storage on this iPhone. Export backups regularly.
+Existing orders, seasonal orders, calendar, to-do list, and local-device storage are retained.
+Before replacing the live site, export a backup from the current app on your iPhone.
+After uploading these files, open the updated site and restore the JSON backup if needed.
+Keep the original backup file safely.
 
-Files: index.html, app.js, manifest.json, sw.js, logo.png, icon-192.png, icon-512.png, README.txt
+Working-hours CSV headings: Start date, End date, Hours per week, Notes.
+Expenses CSV headings: Date, Description, Category, Amount.
+Excel files should be saved/exported as CSV before importing.
+
+The app stores data locally in the browser on the device. It does not sync automatically
+between devices. Export backups regularly.
