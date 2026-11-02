@@ -1,15 +1,19 @@
-Airy Fairy Business Buddy — working hours, income and expenses update
+Airy Fairy Business Buddy — records and tax organiser update
 
-This version adds manual entry forms for:
-- Working hours: date, start/finish time, break, hours, hourly rate, estimated pay and notes.
-- Income: date received, description/customer, category, amount, payment method and notes.
-- Expenses: date paid, description, category, supplier, amount and receipt notes.
+This folder contains the public website files for Airy Fairy Business Buddy.
 
-The Records page includes totals, edit/delete controls, a date-range tax-record summary that can be printed or saved as PDF, and CSV export.
+Records page features:
+- Add, edit and delete income entries.
+- Add, edit and delete expenses using Airy Fairy-specific categories.
+- Record business-use percentage for mixed-use costs, receipt references, business miles and journey details.
+- Log working hours, times, breaks and optional hourly rates.
+- Import working-hours and expense spreadsheets saved as CSV.
+- Print / save a date-range business records report as PDF and export records as CSV.
 
-Important: Income is entered manually. Do not record the same customer payment twice. This report only includes entries saved in the Records page; it does not automatically calculate income from orders. Keep original receipts, invoices and bank records, and check tax treatment with HMRC or an accountant.
+Expense categories include car mileage, vehicle running costs, parking/tolls, balloons/materials, helium, equipment/tools, equipment hire, additional workers, home costs, internet/phone, postage, marketing, software, insurance, accountancy, bank fees, training, storage and repairs.
 
-Existing regular and seasonal orders, calendar, to-do list and JSON backup/import remain. Data stays in local browser storage on the iPhone. After deploying, open the live site and use Backup > Import backup to restore the saved Airy Fairy JSON if required. Keep the backup file.
+Important: the app is a record-keeping organiser, not tax advice. A business-use percentage does not automatically make an expense allowable. Check HMRC treatment for home costs, vehicle mileage versus actual running costs, and capital equipment. Keep original receipts and invoices.
 
+Customer and business records are stored locally in the browser on this iPhone. Export a JSON backup regularly. Before replacing website files, keep your existing backup safe. After deployment, open the website in Safari and refresh it; if the old version remains, close the app/browser tab fully and reopen it to load the updated service worker cache.
 
-Calendar update: the calendar grid now shows regular orders only, with a separate Upcoming seasonal collections list underneath. Both lists are included when printing the calendar page.
+Files: index.html, app.js, manifest.json, sw.js, logo.png, icon-192.png, icon-512.png, seed.js, README.txt.
