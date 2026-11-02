@@ -1,20 +1,15 @@
-Airy Fairy Business Buddy — updated app files
+Airy Fairy Business Buddy — working hours, income and expenses update
 
-New in this version:
-- Edit existing regular and seasonal orders.
-- Permanently delete cancelled or unwanted orders after confirmation.
-- Records section to import working-hours and expense records from CSV files.
-- Downloadable CSV templates for both imports.
-- Imported records are included in the app's JSON backup.
+This version adds manual entry forms for:
+- Working hours: date, start/finish time, break, hours, hourly rate, estimated pay and notes.
+- Income: date received, description/customer, category, amount, payment method and notes.
+- Expenses: date paid, description, category, supplier, amount and receipt notes.
 
-Existing orders, seasonal orders, calendar, to-do list, and local-device storage are retained.
-Before replacing the live site, export a backup from the current app on your iPhone.
-After uploading these files, open the updated site and restore the JSON backup if needed.
-Keep the original backup file safely.
+The Records page includes totals, edit/delete controls, a date-range tax-record summary that can be printed or saved as PDF, and CSV export.
 
-Working-hours CSV headings: Start date, End date, Hours per week, Notes.
-Expenses CSV headings: Date, Description, Category, Amount.
-Excel files should be saved/exported as CSV before importing.
+Important: Income is entered manually. Do not record the same customer payment twice. This report only includes entries saved in the Records page; it does not automatically calculate income from orders. Keep original receipts, invoices and bank records, and check tax treatment with HMRC or an accountant.
 
-The app stores data locally in the browser on the device. It does not sync automatically
-between devices. Export backups regularly.
+Existing regular and seasonal orders, calendar, to-do list and JSON backup/import remain. Data stays in local browser storage on the iPhone. After deploying, open the live site and use Backup > Import backup to restore the saved Airy Fairy JSON if required. Keep the backup file.
+
+
+Calendar update: the calendar grid now shows regular orders only, with a separate Upcoming seasonal collections list underneath. Both lists are included when printing the calendar page.
