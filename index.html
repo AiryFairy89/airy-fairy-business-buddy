@@ -12,8 +12,11 @@
 @media print{
  @page{size:A4;margin:14mm}
  body{background:#fff!important;color:#222!important;padding:0!important;font-size:10pt}
- header,.nav,.foot,.no-print,#app{display:none!important}
- #printReport{display:block!important;color:#222!important;font-family:Arial,sans-serif}
+ header,.nav,.foot,.no-print{display:none!important}
+ #app{display:block!important}
+ #printReport{display:none!important;color:#222!important;font-family:Arial,sans-serif}
+ body.printing-report #app,body.printing-calendar #app{display:none!important}
+ body.printing-report #printReport,body.printing-calendar #printReport{display:block!important}
  #printReport h1{font-size:20pt;margin:0 0 4mm}
  #printReport h2{font-size:13pt;margin:6mm 0 2mm;border-bottom:1px solid #bbb;padding-bottom:2mm}
  #printReport table{width:100%;border-collapse:collapse;font-size:9pt;margin:2mm 0 5mm}
